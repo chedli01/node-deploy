@@ -29,7 +29,7 @@ app.use((req, res, next) => {
 app.get('/auth', (req, res) => res.send('Hello from Auth Service!'));
 
 
-app.get('/send', async (req, res) => {
+app.get('/auth/send', async (req, res) => {
   await sendMessage();
   res.send('Message sent to RabbitMQ');
 });
