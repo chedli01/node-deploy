@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: auth
-          image: chedli01/auth-app:v8
+          image: chedli01/auth-app:v9
           ports:
             - containerPort: 4000
           env:
